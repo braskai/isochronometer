@@ -112,23 +112,6 @@ score = metric.evaluate( #SO requires start and end times.
 print(f"SO:{score}")
 
 ```
----
-
-Please cite this work:
-```bibtex
-@misc{rozanov2024isochronometersimpleeffectiveisochronic,
-      title={IsoChronoMeter: A simple and effective isochronic translation evaluation metric}, 
-      author={Nikolai Rozanov and Vikentiy Pankov and Dmitrii Mukhutdinov and Dima Vypirailenko},
-      year={2024},
-      eprint={2410.11127},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2410.11127}, 
-}
-```
-
-## (C) 2024 - Present, Nikolai Rozanov et al.
-
 
 ---
 ## Archive / Other:
@@ -157,5 +140,21 @@ pip3 install WeTextProcessing==1.0.4.1 #THIS FAILS
 pip3 install -e .
 ```
 
+---
+
+Please cite this work:
+```bibtex
+@misc{rozanov2024isochronometersimpleeffectiveisochronic,
+      title={IsoChronoMeter: A simple and effective isochronic translation evaluation metric}, 
+      author={Nikolai Rozanov and Vikentiy Pankov and Dmitrii Mukhutdinov and Dima Vypirailenko},
+      year={2024},
+      eprint={2410.11127},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.11127}, 
+}
+```
+
+## (C) 2024 - Present, Nikolai Rozanov et al.
 
 
