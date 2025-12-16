@@ -18,7 +18,7 @@ class SpeakingTimeEstimator(ABC):
 
 class VitsSpeakingTimeEstimator(SpeakingTimeEstimator):
     def __init__(self, lang, device="cpu", finetuned=False) -> None:
-        print(f"Running on {device}")
+        # print(f"Running on {device}")
         self.lang = lang
         self.predictor = build_timestamps_predictor(lang, device)
 

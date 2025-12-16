@@ -5,9 +5,11 @@ lhotse==1.32.1
 pyannote-audio==4.0.3
 pydantic==2.12.5
 pypinyin==0.55.0
+transformers==4.57.3
 # Packages that take longer to resolve:
 # lilcom==1.1.0 #conflicts depending on env
 contourpy==1.0.2
 torchmetrics==1.6.1
 sacrebleu==2.4.0
 # WeTextProcessing==1.0.4.1 #openfst requirement
+

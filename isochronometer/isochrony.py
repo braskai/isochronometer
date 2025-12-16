@@ -50,7 +50,7 @@ class DurationPredictor:
                 lang = lang.split("-")[0]
             if lang[:2] == "ja" or lang[:2] == "it":
                 raise NotImplementedError(f"Does not work for {lang}!")
-            print("Creating Vits estimator")
+            # print("Creating Vits estimator")
             time_estimator = VitsSpeakingTimeEstimator(lang, finetuned=finetuned) #device="cuda"
         else:
             raise NotImplemented(f"We don't have model: {model} as duration predictor.")

@@ -1,3 +1,4 @@
+print("Running IsoChrony Test")
 from . import isochrony
 
 if __name__ == "__main__":

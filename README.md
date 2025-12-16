@@ -17,7 +17,14 @@ Here is the paper:
 1. You need the library: `libsndfile` & `openfst`
 Depending on your platform (MAC / Linux) you will need different commands. E.g.:
 
-- Mac: requires conda (due to openfst)
+- Linux: (Conda variant tested, libsndfile probably will require apt in non conda)
+```bash
+conda create -n env_isochronometer python=3.11
+conda activate env_isochronometer
+conda install -c conda-forge libsndfile==1.0.31
+```
+
+- Mac (**not working**): openfst fails, however, this is how far one can get:
 ```bash
 conda create -n env_isochronometer python=3.11
 conda activate env_isochronometer
@@ -25,18 +32,24 @@ brew install libsndfile
 # brew install openfst
 ```
 
-- Linux (not tested):
-```bash
-conda create -n env_isochronometer python=3.11
-conda activate env_isochronometer
-apt install libsndfile
-```
-
 ---
 ### 1. Installation
 
-1. Installation on Linux (to be tested)
+1. Installation on Linux (CONDA)
 ```bash
+pip3 install sonar-space==0.5.0 torch==2.8.0 #needs a seperate install (due to numpy)
+
+# Install lilcom
+conda install -c lilcom lilcom #if you use conda, use `pip3 install lilcom==1.1.0` (if pip)
+
+# Install the general requirements
+pip3 install -r requirements.txt
+
+# Install WeTextProcessing
+pip3 install WeTextProcessing==1.0.4.1 #THIS FAILS
+
+# install isochronometer
+pip3 install -e .
 ```
 
 ---
@@ -44,17 +57,17 @@ apt install libsndfile
 
 1. Testing Blaser (classical MT Quality Estimation)
 ```bash
-python3 -m isochronomter.test_blaser
+python3 -m isochronometer.test_blaser
 ```
 
 2. Testing isochrony (duration-based MT Quality Estimation)
 ```bash
-python3 -m isochronomter.test_isochrony
+python3 -m isochronometer.test_isochrony
 ```
 
 ---
 ### 3. Usage:
-See `isochronometer/test_*` files for more details.
+See `scripts/*` files for more details.
 
 1. Evaluating blaser:
 ```python
