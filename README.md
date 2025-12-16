@@ -46,7 +46,7 @@ conda install -c lilcom lilcom #if you use conda, use `pip3 install lilcom==1.1.
 pip3 install -r requirements.txt
 
 # Install WeTextProcessing
-pip3 install WeTextProcessing==1.0.4.1 #THIS FAILS
+pip3 install WeTextProcessing==1.0.4.1
 
 # install isochronometer
 pip3 install -e .
