@@ -24,10 +24,10 @@ conda activate env_isochronometer
 conda install -c conda-forge libsndfile==1.0.31
 ```
 
-- Mac (**not working**): openfst fails, however, this is how far one can get:
+- Mac (**now working**): we have a workaround (https://github.com/wenet-e2e/WeTextProcessing/issues/317#issuecomment-3660590983):
 ```bash
-conda create -n env_isochronometer python=3.11
-conda activate env_isochronometer
+virtualenv env_isochronometer
+source env_isochronometer/bin/activate
 brew install libsndfile
 # brew install openfst
 ```
