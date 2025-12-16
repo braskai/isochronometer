@@ -112,11 +112,28 @@ score = metric.evaluate( #SO requires start and end times.
 print(f"SO:{score}")
 
 ```
+---
+
+Please cite this work:
+```bibtex
+@misc{rozanov2024isochronometersimpleeffectiveisochronic,
+      title={IsoChronoMeter: A simple and effective isochronic translation evaluation metric}, 
+      author={Nikolai Rozanov and Vikentiy Pankov and Dmitrii Mukhutdinov and Dima Vypirailenko},
+      year={2024},
+      eprint={2410.11127},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.11127}, 
+}
+```
+
+## (C) 2024 - Present, Nikolai Rozanov et al.
+
 
 ---
-## Archive:
+## Archive / Other:
 
-### Installation
+### Installation (failing on Mac)
 2. Installation from Source: (on Mac, currently still fails: https://github.com/kylebgorman/pynini/issues/95)
 ```bash
 pip3 install sonar-space==0.5.0 torch==2.8.0 #needs a seperate install (due to numpy)
@@ -141,19 +158,4 @@ pip3 install -e .
 ```
 
 
----
 
-Please cite this work:
-```bibtex
-@misc{rozanov2024isochronometersimpleeffectiveisochronic,
-      title={IsoChronoMeter: A simple and effective isochronic translation evaluation metric}, 
-      author={Nikolai Rozanov and Vikentiy Pankov and Dmitrii Mukhutdinov and Dima Vypirailenko},
-      year={2024},
-      eprint={2410.11127},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2410.11127}, 
-}
-```
-
-## (C) 2024 - Present, Nikolai Rozanov et al.
