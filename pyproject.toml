@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "setuptools-scm>=8.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isochronometer"
+version = "0.0.1"
+description = "IsoChronoMeter"
+authors = [
+    {name = "Nikolai Rozanov", email = "nikolai.rozanov@gmail.com"},
+    {name = "Vikentiy Pankov"},
+
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+urls = {"Homepage" = "https://github.com/ai-nikolai/isochronometer"}
+
+
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+include-package-data = true
+packages = ["isochronometer"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+
+

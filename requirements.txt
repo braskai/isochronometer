@@ -1,0 +1,13 @@
+# sonar-space==0.5.0 #conflicts depending on env
+langcodes==3.5.1
+ttsmms==0.7
+lhotse==1.32.1
+pyannote-audio==4.0.3
+pydantic==2.12.5
+pypinyin==0.55.0
+# Packages that take longer to resolve:
+# lilcom==1.1.0 #conflicts depending on env
+contourpy==1.0.2
+torchmetrics==1.6.1
+sacrebleu==2.4.0
+# WeTextProcessing==1.0.4.1 #openfst requirement
