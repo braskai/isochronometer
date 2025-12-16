@@ -52,6 +52,32 @@ pip3 install WeTextProcessing==1.0.4.1
 pip3 install -e .
 ```
 
+
+2. Installation from Source MacOS: (Openfst 1.8.4 & pynini 2.1.7, https://github.com/wenet-e2e/WeTextProcessing/issues/317)
+```bash
+pip3 install sonar-space==0.5.0 torch==2.8.0 #needs a seperate install (due to numpy)
+
+# Install lilcom
+pip3 install lilcom==1.1.0  #if you use pip
+
+# Install the general requirements
+pip3 install -r requirements.txt
+
+# Install Pynini
+brew install openfst
+export CPLUS_INCLUDE_PATH="/opt/homebrew/include:$CPLUS_INCLUDE_PATH"
+export LIBRARY_PATH="/opt/homebrew/lib:$LIBRARY_PATH"
+pip3 install uv
+uv pip install pynini==2.1.7
+
+# Install WeTextProcessing
+pip3 install WeTextProcessing==1.0.4.1 --no-deps
+
+pip3 install "numpy<2.0.0" #some libraries require <2 numpy
+# install isochronometer
+pip3 install -e .
+```
+
 ---
 ### 2. Testing the installation
 
@@ -113,32 +139,7 @@ print(f"SO:{score}")
 
 ```
 
----
-## Archive / Other:
 
-### Installation (failing on Mac)
-2. Installation from Source: (on Mac, currently still fails: https://github.com/kylebgorman/pynini/issues/95)
-```bash
-pip3 install sonar-space==0.5.0 torch==2.8.0 #needs a seperate install (due to numpy)
-
-# Install lilcom
-conda install -c lilcom lilcom #if you use conda
-# pip3 install lilcom==1.1.0  #if you use pip
-
-# Install the general requirements
-pip3 install -r requirements.txt
-
-# Install WeTextProcessing
-conda install -c conda-forge openfst
-# conda install -c conda-forge pynini
-# export CPLUS_INCLUDE_PATH="/opt/homebrew/include:$CPLUS_INCLUDE_PATH"
-# export LIBRARY_PATH="/opt/homebrew/lib:$LIBRARY_PATH"
-# pip3 install pynini==2.1.6.post1 #THIS FAILS
-pip3 install WeTextProcessing==1.0.4.1 #THIS FAILS
-
-# install isochronometer
-pip3 install -e .
-```
 
 ---
 
