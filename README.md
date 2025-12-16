@@ -143,4 +143,17 @@ pip3 install -e .
 
 ---
 
+Please cite this work:
+```bibtex
+@misc{rozanov2024isochronometersimpleeffectiveisochronic,
+      title={IsoChronoMeter: A simple and effective isochronic translation evaluation metric}, 
+      author={Nikolai Rozanov and Vikentiy Pankov and Dmitrii Mukhutdinov and Dima Vypirailenko},
+      year={2024},
+      eprint={2410.11127},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.11127}, 
+}
+```
+
 ## (C) 2024 - Present, Nikolai Rozanov et al.
