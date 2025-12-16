@@ -1,0 +1,11 @@
+*.json
+.DS_Store
+__pycache__/*
+*.zip
+evaluation_data/*
+__pycache__/*
+__pycache__
+*.pyc
+dist/*
+
+*.egg-info/*

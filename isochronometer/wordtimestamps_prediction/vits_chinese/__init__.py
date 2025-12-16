@@ -1,0 +1,1 @@
+from .chinese_timestamps_predictor import BertChineseWordTimestampsPredictor
